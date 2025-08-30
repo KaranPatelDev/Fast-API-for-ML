@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Karan",
+        "department": "Backend",
+        "age": 20
+    },
+    {
+        "id": 2,
+        "name": "Aarav",
+        "department": "Frontend",
+        "age": 22
+    },
+    {
+        "id": 3,
+        "name": "Isha",
+        "department": "UI/UX",
+        "age": 21
+    },
+    {
+        "id": 4,
+        "name": "Rohan",
+        "department": "DevOps",
+        "age": 23
+    },
+    {
+        "id": 5,
+        "name": "Meera",
+        "department": "Backend",
+        "age": 24
+    }
+]
