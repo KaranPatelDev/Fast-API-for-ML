@@ -14,5 +14,5 @@ def get_db():
 
 # Endpoints
 @app.get("/home")
-def home(db = Depends(get_db)): # Dependency Injection Code Here
+def home(db = Depends(get_db)): # Dependency Injection Code is used here
     return {"db_status": db['connection']}
