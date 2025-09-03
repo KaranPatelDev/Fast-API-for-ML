@@ -100,6 +100,10 @@ graph LR
 
 ## 🔴 Caching with Redis
 
+**Full Form:**  
+
+**Redis** stands for Remote Dictionary Server.
+
 **Theory:**  
 Redis is an in-memory, distributed key-value store supporting rich data structures (strings, hashes, lists, sets, sorted sets). It is widely used for caching due to its speed and scalability.
 
