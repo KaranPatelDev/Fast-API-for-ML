@@ -50,3 +50,4 @@ def delete_employee(emp_id: int):
             del employees_db[index]
             return {'message': 'Employee deleted successfully'}
     raise HTTPException(status_code=404, detail='Employee Not Found')
+
