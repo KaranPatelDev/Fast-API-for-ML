@@ -42,10 +42,15 @@ graph TD
 
 ---
 
-## ⏱️ Simple Timing with `time`
+## ⏱️ Profiling with `time`
 
 **Theory:**  
-The simplest form of profiling is measuring elapsed time for a code block. This is useful for quick checks but lacks granularity.
+Profiling with Python's built-in `time` module is the simplest way to measure how long a block of code or a function takes to execute. This approach is useful for quick, coarse-grained performance checks and for comparing the relative speed of different implementations.
+
+**How it works:**  
+- Record the start time before the code block.
+- Record the end time after the code block.
+- The difference gives the elapsed time.
 
 **Example:**
 ```python
@@ -54,10 +59,24 @@ import time
 start = time.time()
 # ... code to profile ...
 end = time.time()
-print("Elapsed:", end - start)
+print("Elapsed:", end - start, "seconds")
 ```
+
+**Use Cases:**  
+- Measuring the response time of an endpoint.
+- Timing database queries or external API calls.
+- Comparing the speed of different algorithms.
+
 **Limitation:**  
-Does not show *where* time is spent, only *how much*.
+- Only provides total elapsed time, not a breakdown by function or line.
+- Not suitable for identifying detailed bottlenecks.
+
+```mermaid
+graph LR
+    A[Start Timer] --> B[Run Code Block]
+    B --> C[End Timer]
+    C --> D[Calculate Elapsed Time]
+```
 
 ---
 
