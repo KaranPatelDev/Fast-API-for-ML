@@ -1,0 +1,8 @@
+docker compose up --build
+FastAPI Endpoint : http://localhost:8000/
+FastAPI metrics : http://localhost:8000/metrics
+Prometheus UI : http://localhost:9090/
+    Run Query : http_requests_total
+Grafana : http://localhost:3000/
+Username : admin
+Password : admin

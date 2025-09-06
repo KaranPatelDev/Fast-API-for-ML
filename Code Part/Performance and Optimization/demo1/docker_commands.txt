@@ -1,0 +1,9 @@
+docker-compose up --build
+FastAPI Endpoint : localhost://8000
+FastAPI Metrics : localhost://8000/metrics
+Prometheus UI : localhost:9090
+    Run Query : http_requests_total
+
+Start-Stop commands:
+docker-compose restart prometheus
+docker-compose stop prometheus
